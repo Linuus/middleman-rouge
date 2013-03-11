@@ -19,7 +19,8 @@ Or install it yourself as:
     $ gem install redcarpet
     
  Then add this to your config.rb file:
- 
+
+ ```
   ###
   # Markdown
   ###
@@ -32,13 +33,14 @@ Or install it yourself as:
   ###
   
   activate :rouge_syntax
+```
 
 Also, you need to add a CSS file to add some coloring. Rouge supports stylesheets created for Pygment. A nice collection of CSS files can be found here:
 [https://github.com/richleland/pygments-css](https://github.com/richleland/pygments-css). You may need to configure the CSS class to have `.highlight` as base class.
 
 ## Usage
 You can add a nice code block like this:
-
+</pre>
   ```ruby
     def index
       @cars = Car.all
@@ -49,7 +51,7 @@ You can add a nice code block like this:
       end
     end
   ```
-
+</pre>
 
 ## Contributing
 
