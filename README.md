@@ -20,19 +20,19 @@ Or install it yourself as:
     
  Then add this to your config.rb file:
 
- ```
-  ###
-  # Markdown
-  ###
-  
-  set :markdown_engine, :redcarpet
-  set :markdown, :fenced_code_blocks => true, :smartypants => true
-  
-  ###
-  # Code highlighting
-  ###
-  
-  activate :rouge_syntax
+ ```ruby
+###
+# Markdown
+###
+
+set :markdown_engine, :redcarpet
+set :markdown, :fenced_code_blocks => true, :smartypants => true
+
+###
+# Code highlighting
+###
+
+activate :rouge_syntax
 ```
 
 Also, you need to add a CSS file to add some coloring. Rouge supports stylesheets created for Pygment. A nice collection of CSS files can be found here:
@@ -40,17 +40,18 @@ Also, you need to add a CSS file to add some coloring. Rouge supports stylesheet
 
 ## Usage
 You can add a nice code block like this:
-</pre>
-  ```ruby
-    def index
-      @cars = Car.all
 
-      respond_to do |format|
-        format.html # index.html.erb
-        format.json { render json: @cars }
-      end
-    end
-  ```
+<pre>
+```ruby
+def index
+  @cars = Car.all
+
+  respond_to do |format|
+    format.html # index.html.erb
+    format.json { render json: @cars }
+  end
+end
+```
 </pre>
 
 ## Contributing
