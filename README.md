@@ -20,7 +20,7 @@ Or install it yourself as:
     
  Then add this to your config.rb file:
 
- ```ruby
+```ruby
 ###
 # Markdown
 ###
